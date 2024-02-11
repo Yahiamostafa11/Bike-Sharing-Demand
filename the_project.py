@@ -127,4 +127,3 @@ sns.distplot(train['count'])
 train['count']=np.log1p(train['count'])
 
 sns.distplot(train['count'])
-
