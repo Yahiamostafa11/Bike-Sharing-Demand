@@ -1,39 +1,51 @@
-#the tusk
-*Bike sharing systems are a means of renting bicycles where the process of obtaining membership, rental, and bike return is automated via a network of kiosk locations throughout a city. Using these systems, people are able rent a bike from a one location and return it to a different place on an as-needed basis. Currently, there are over 500 bike-sharing programs around the world.
+# Bike Sharing Demand Predictions
 
-Use the files provided below to build a machine learning regression model that make prediction on test data
+## Overview
+This repository contains code and data for predicting bike sharing demand. The goal is to forecast the number of bikes rented in a given time period based on various features such as weather conditions, time of day, and day of the week.
 
-##Rubric 
-#EDA
-*Did you load the data using pandas ?
-*Did you use Exploration methods such as(info, head, tail, describe, valu_counts, isnull, unique )?
-*Did you make visualization (hist, boxplot, correlation matrix, pie) ?
+## Dataset
+The dataset used for this project contains historical data of bike rentals, including features such as:
+- *datetime*: Date and time of the rental
+- *season*: Season of the year (spring, summer, fall, winter)
+- *holiday*: Whether it's a holiday or not
+- *weather*: Weather condition (clear, mist, light rain, heavy rain)
+- *temp*: Temperature in Celsius
+- *humidity*: Humidity level
+- *windspeed*: Wind speed
+- *count*: Number of bikes rented
 
-##training
-*Did you use sk-learn?
-*Did you use h2o?
-*Did you use autogluon?
-*Did you make a baseline accuracy?
-*Did you evaluate your model? 
+## Setup
+To run the code in this repository, follow these steps:
+   
 
-##Inference
-*Did you make prediction using model with the highest accuracy?
-*Did you make the submission file ready for submission?
+1. Navigate to the project directory:
+   
+   cd bike-sharing-demand
+   
 
-###some hot steps
+2. Install the required dependencies:
+   
+   pip install -r requirements.txt
+   
 
-#1. Importing necessary libraries:
-*Start by improting various libraries like:
-1. os
-2. datetime
-3. pandas
-4. numpy
-5. seaborn
-6. matplotlib.pyplot
+3. Run the Jupyter notebook or Python scripts to train models and make predictions.
 
-#2. Loading the data
-#3. Data visualization
-#4. Data preprocessing
-#5. Defining metric
-#6. Model selection
-#7. Submission
+## Models
+Various machine learning models are implemented for predicting bike sharing demand, including:
+- Linear Regression
+- Random Forest
+- Gradient Boosting
+- Neural Networks
+
+## Usage
+1. *Training*: Use the provided Jupyter notebook or Python scripts to train the models on the dataset.
+
+2. *Prediction*: After training, you can use the trained models to make predictions on new data. Simply input the features of the new data into the trained model to get the predicted bike rental count.
+
+3. *Evaluation*: Evaluate the performance of the models using metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).
+
+## Contributions
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
+
+## Acknowledgments
+Special thanks to the bike sharing company for providing the dataset used in this project.
