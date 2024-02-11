@@ -49,3 +49,6 @@ Contributions to this project are welcome. If you find any issues or have sugges
 
 ## Acknowledgments
 Special thanks to the bike sharing company for providing the dataset used in this project.
+
+## Author
+© ***[INNOCENT UDO](https://github.com/Yahiamostafa11)***
